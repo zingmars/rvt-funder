@@ -1,0 +1,78 @@
+<section data-ng-controller="PaymentController">
+	<div id="project-view-header" class="project-view-header-border">
+		<div id="payment-project">
+			<div id="payment-project-img">
+				<img src="/img/projects/nuke.png">
+			</div>			
+			<div id="payment-project-title">
+				<h1> Pēdējais projekts </h1>
+			</div>			
+		</div>
+	</div>
+	<h2 id="payment-title"> Izvēlaties atalgojumu </h2>
+	<form action="#!/project/1/pay/success">		
+			<table id="payment-table">
+				<tr>
+					<th id="payment-table-radio"></th>
+					<th id="payment-table-reward"> Atalgojums </th>
+					<th id="payment-table-sum"> Minimālā summa </th>
+				</tr>
+				<div class="payment-reward">
+					<tr>
+						<td> 
+							<input type="radio" name="proj" value="1"> 
+						</td>
+						<td>
+							<h4 class="payment-table-reward-name"> Bez atalgojuma </h4> 
+							<p> Es vienkārši gribu ziedot. </p>
+						</td>					
+						<td class="payment-table-minimum-sum">
+							<p> €1 </p>
+						</td>
+					</tr>
+				</div>
+				<div class="payment-reward">
+					<tr>
+						<td> 
+							<input type="radio" name="proj" value="1"> 
+						</td>
+						<td>
+							<h4 class="payment-table-reward-name"> Atalgojums 1 </h4> 
+							<p> Liels paldies no mums! </p>
+						</td>					
+						<td class="payment-table-minimum-sum">
+							<p> €5 </p>
+						</td>
+					</tr>
+				</div>
+				<div class="payment-reward">
+					<tr>
+						<td> 
+							<input type="radio" name="proj" value="1"> 
+						</td>
+						<td>
+							<h4 class="payment-table-reward-name"> Atalgojums 2 </h4> 
+							<p> Balta bilde </p>
+						</td>					
+						<td class="payment-table-minimum-sum">
+							<p> €15 </p>
+						</td>
+					</tr>
+				</div>
+				<div class="payment-reward">
+					<tr>
+						<td> 
+							<input type="radio" name="proj" value="1"> 
+						</td>
+						<td>
+							<h4 class="payment-table-reward-name"> Atalgojums 3 </h4> 
+							<p> Atgriezīsim naudu (Pieejami 10 no 10.)</p>							
+						</td>					
+						<td class="payment-table-minimum-sum">
+							<p> €150 </p>
+						</td>
+					</tr>
+				</div>
+			</table>						
+	</form>	
+</section>

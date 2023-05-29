@@ -1,0 +1,29 @@
+<section data-ng-controller="UserController">
+	<div class="auth">
+		<form class="signup form-horizontal" method="POST" name="signin" ng-submit="login(formData)">
+			<div class="form-error error" id="wrongcredentials">{{'user.wrongCredentials' | i18next}}</div>
+			<div class="form-error error" id="signinerror">{{'user.signinerror' | i18next}}</div>			
+			<div class="control-group">
+				<label class="control-label">{{'user.email' | i18next}}</label>
+				<span class="controls">
+					<input type="text" name="email" id="email" ng-model="formData.email" placeholder="{{'user.email' | i18next}}" required>
+				</span>
+			</div>
+			<div class="control-group">
+			<label class="control-label">{{'user.password' | i18next}}</label>
+				<span class="controls">
+					<input type="password" name="password" id="password" ng-model="formData.password" placeholder="{{'user.password' | i18next}}" required>
+				</span>
+			</div>
+			<div class="control-group">
+				<label class="control-label">{{'user.rememberme' | i18next}}</label>
+				<span class="controls">
+					<input type="checkbox" name="rememberme" id="rememberme" ng-model="formData.rememberme">
+				</span>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary" ng-disabled="!signin.$valid" type="submit">{{'signin' | i18next}}</button> {{'or' | i18next}} <a class="show-login" href="/#!/signup">{{'signup' | i18next}}!</a> {{'or' | i18next}} <a class="show-reset" href="/#!/resetpassword">{{'user.resetPassword' | i18next}}</a>
+			</div>
+		</form>
+	</div>
+</section>

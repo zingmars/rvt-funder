@@ -1,0 +1,42 @@
+<section data-ng-controller="UserController">	
+	<div class="auth">
+		<form class="signup form-horizontal" method="POST" name="signup" ng-submit="register(formData)">
+			<div class="error" id="registrationerror">{{'user.registrationerror'}}</div>
+			<div class="control-group">
+				<label class="control-label">{{'user.fullname' | i18next}}</label>
+				<span class="controls">
+					<input type="text" name="name" id="name" ng-model="formData.name" placeholder="{{'user.fullname' | i18next}}" required>
+					<span class="form-error" ng-show="signup.name.$error.required && signup.name.$dirty">{{'user.nameRequired' | i18next}}</span>
+				</span>
+			</div>
+			<div class="control-group">
+				<label class="control-label">{{'user.email' | i18next}}</label>
+				<span class="controls">
+					<input type="email" name="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" id="email" ng-model="formData.email" placeholder="{{'user.email' | i18next}}" required>
+					<span class="form-error" ng-show="signup.email.$error.required && signup.email.$dirty">{{'user.emailRequired' | i18next}}</span>
+					<span class="form-error" ng-show="!signup.email.$error.required && (signup.email.$error.email || signup.email.$error.pattern) && signup.email.$dirty">{{'user.invalidEmail' | i18next}}</span>
+				</span>
+			</div>      
+			<div class="control-group">
+				<label class="control-label">{{'user.password' | i18next}}</label>
+				<span class="controls">
+					<input type="password" ng-minlength="6" name="password" id="password" ng-model="formData.password" placeholder="{{'user.password' | i18next}}" required>
+					<span class="form-error" ng-show="signup.password.$error.required && signup.password.$dirty">{{'user.passwordRequired' | i18next}}</span>
+					<span class="form-error" ng-show="!signup.password.$error.required && signup.password.$error.minlength && signup.password.$dirty">{{'user.passwordLength' | i18next}}</span>
+				</span>
+			</div>      
+			<div class="control-group">
+				<label class="control-label">{{'user.passwordre' | i18next}}</label>
+				<span class="controls">
+					<input type="password" compare-to="signup.password" ng-minlength="6" ng-model="formData.passwordRepeat" name="passwordRepeat" id="passwordRepeat" placeholder="{{'user.password' | i18next}}" required>          
+					<span class="form-error" ng-show="signup.passwordRepeat.$error.required && signup.passwordRepeat.$dirty">{{'user.passwordConfirm' | i18next}}</span>
+					<span class="form-error" ng-show="!signup.passwordRepeat.$error.required && signup.passwordRepeat.$error.compareTo && signup.password.$dirty">{{'user.passwordsNoMatch' | i18next}}</span>
+				</span>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary" ng-disabled="!signup.$valid" type="submit">{{'signup' | i18next}}</button> {{'or' | i18next}} <a class="show-login" href="/#!/signin">{{'signin' | i18next}}!</a>
+			</div>
+		</form>
+		<p class="disclaimer">{{'user.disclaimer' | i18next}}</p>
+	</div>  
+</section>

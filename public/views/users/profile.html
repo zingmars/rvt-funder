@@ -1,0 +1,68 @@
+<section data-ng-controller="ProfileController">
+		<h1 class="headline">{{'profileSettings' | i18next}}</h1>				
+		<br />
+		<form class="form-centered profile-settings">
+			<p>{{'user.avatar' | i18next}}</p>
+			<input type="file" name="image" id="avatar" accept="image/jpeg,image/png">
+			<input type="button" ng-click="uploadPicture()" class="btn" value="{{'user.uploadPicture' | i18next}}"><br />		
+			<img class="profile-avatar" src="/img/users/blank_avatar.png">
+			<br />
+
+			<!-- TODO: Profile privacy -->
+			<!-- <p>Profile privacy</p>
+			<select>
+				<option> Public </option>
+				<option> Private </option>
+			</select>
+			<br /> -->
+			
+			<p>{{'user.fullname' | i18next}}</p>
+			<input id="username" type="text" name="fullname" placeholder="{{'user.fullname' | i18next}}">
+			<br />
+
+			<p>{{'user.biography' | i18next}}</p>
+			<textarea id="biography" rows="4" maxlength="250" cols="50" name="biography" placeholder="{{'user.biographyPlaceholder' | i18next}}"></textarea>
+			<br />
+
+			<p>{{'user.location' | i18next}}</p>
+			<select id="location">
+				<option value="0"> {{'countries.0' | i18next}} </option>
+				<option value="371"> {{'countries.371' | i18next}} </option>
+				<option value="44"> {{'countries.44' | i18next}} </option>
+				<option value="1"> {{'countries.1' | i18next}} </option>
+			</select>
+			<br />
+
+			<p>{{'user.areaCode' | i18next}}</p>
+			<input maxlength="3" type="number" id="areaCode" name="areaCode" placeholder="{{'user.areaCode' | i18next}}" disabled>
+			<br />
+
+			<p>{{'user.zipCode' | i18next}}</p>
+			<input maxlength="6" type="text" id="zipCode" name="zipCode" placeholder="{{'user.zipCode' | i18next}}">
+			<br />
+
+
+			<p>{{'user.phone' | i18next}}</p>
+			<input type="text" id="phone" name="phone" placeholder="{{'user.phone' | i18next}}">
+			<br />
+
+			<p>{{'user.address' | i18next}}</p>
+			<input type="text" id="address" name="address" placeholder="{{'user.address' | i18next}}">
+			<br />
+
+			<p>{{'user.socialNetworks' | i18next}} <a ng-click="addNetwork()">(+)</a></p>
+			<div id="socialnetworks"></div>
+
+			<p>{{'user.websites' | i18next}} <a ng-click="addWebsite()">(+)</a></p>
+			<div id="websites"></div>
+			<br />
+			
+			<!-- Vanity URI -->
+			<!-- <p>{{'vanity' | i18next}}</p>
+			https://www.funder.zone/user/<input type="text">
+			<br /> -->
+
+			<br />
+			<a href="/#!/user/{{global.user.id}}">{{'previewProfile' | i18next}}</a>
+		</form>		
+</section>

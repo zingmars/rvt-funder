@@ -1,0 +1,10 @@
+{
+	PORT: 3000, // capital PORT allows auto override by common env variable if it exists
+	SSLPORT: 3001,
+	FORCE_DB_SYNC: "true", // must be string to allow environment variable override
+    enableSequelizeLog: "true", // type chosen as string for no particular reason
+    expressSessionSecret: 'EdsKG_MDsT<8E7-DpD5641&KRFNPM|II',
+    cookieSessionSecret: 'Thisisatemporary setback',    
+    sslKey: 'keys/ssl_selfsigned.key',
+    sslCert: 'keys/ssl_selfsigned.cert'
+}

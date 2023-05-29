@@ -1,0 +1,42 @@
+#payment-project {	
+	display: block;
+	height: 100px;
+	text-align: center;
+}
+.project-view-header-border {
+	border-bottom: 1px solid gray;	
+}
+#payment-project-img {
+	display: inline-block;
+}
+#payment-project-img img {
+	height: 100px;
+	width: 200px;
+}
+#payment-project-title {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 60px;
+}
+#payment-title {
+	text-align: center;
+}
+#payment-table {
+	width: 100%;
+	margin-bottom: 50px;
+}
+#payment-table-radio {
+	width: 5%;
+}
+#payment-table-reward {
+	width: 70%;
+}
+.payment-table-reward-name {
+	text-align: center;
+}
+.payment-table-minimum-sum {
+	text-align: center;
+}
+#payment-continue {
+	text-align: right;
+}

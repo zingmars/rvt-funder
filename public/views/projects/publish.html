@@ -1,0 +1,29 @@
+<section data-ng-controller="NewProjectController" id="step5" class="newProject">
+	<div id="project-view-header" class="project-view-header-border">
+		<div class="discover-project">
+			<!-- <div class="discover-project-img">
+				<img src="/img/projects/nuke.png">
+			</div> -->
+		<div class="discover-project-description">
+			<div class="discover-project-title">
+				<h1 id="project-name"></h1>
+				</div>
+				<div class="discover-project-about">
+					<p id="project-description"></p>
+					<p>{{'project.expiredate' | i18next}} <span id="project-publish-expiredate"></span></p>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div id="project-publish">
+		<h1 style="text-align: center;">{{'project.readyToPublish' | i18next}}</h1>
+		<a href="#!/project/" id="project-view-info-donate-href">
+			<div id="project-view-info-donatenow">
+				<span id="project-view-info-donate-now-inside">
+					<p class="project-publish-button" id="project-view-info-donate-now-text">{{'project.publishButton' | i18next}}</p>
+				</span>
+			</div>
+		</a>
+	</div>
+</section>

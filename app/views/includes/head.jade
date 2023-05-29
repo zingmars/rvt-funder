@@ -1,0 +1,35 @@
+head
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	meta(name='viewport', content='width=device-width,initial-scale=1')
+
+	title= appName+' - '+t('title')
+	meta(http-equiv='Content-type', content='text/html;charset=UTF-8')
+	meta(name="keywords", content="crowdfunding, latvian, english, projects, kickstarter, indiegogo")
+	meta(name="description", content="A crowdfunding site for your projects and more!")
+	meta(name="referrer" content="never")
+
+	link(href='/img/icons/favicon.ico', rel='shortcut icon', type='image/x-icon')
+
+	meta(property='fb:app_id', content='APP_ID')
+	meta(property='og:title', content='#{appName} - #{title}')
+	meta(property='og:description', content='A crowdfunding site for your projects and more!')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='APP_URL')
+	meta(property='og:image', content='APP_LOGO')
+	meta(property='og:site_name', content='Funder.zone - a crowdfunding site for the masses.')
+	meta(property='fb:admins', content='APP_ADMIN')
+
+	link(rel='stylesheet', href='/lib/bootstrap/docs/assets/css/bootstrap.css')
+	//- link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap-responsive.css')
+	link(rel='stylesheet', href='/css/common.css')
+
+	//if lt IE 9
+		script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+	
+	link(rel='stylesheet', href='/css/views/users.css')
+	link(rel='stylesheet', href='/css/views/payment.css')
+	link(rel='stylesheet', href='/css/views/projects.css')
+	link(rel='stylesheet', href='/css/views/discover.css')
+	link(rel='stylesheet', href='/lib/angular-notify/angular-notify.min.css')
+	link(rel='stylesheet', href='/lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css')

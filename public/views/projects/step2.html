@@ -1,0 +1,59 @@
+<section data-ng-controller="NewProjectController" id="step2" class="newProject">
+	<h1>{{'newproject.title' | i18next}}: {{'newproject.step2' | i18next}}</h1>
+	<p>{{'newproject.aboutproject' | i18next}}</p>
+	<br />
+	<form class="new-project">
+		<p>{{'newproject.name' | i18next}}</p> 
+		<input id="project-name" type="text" maxlength="140">
+		<br />
+		<span id="new-project-nsfw"><input type="checkbox" name="nsfw" id="new-project-nsfw-checkbox"><a onclick="$('#new-project-nsfw-checkbox').trigger('click');" href="javascript:void(0);" class="noselect"> {{'newproject.nsfw' | i18next}}</a></span>
+		<br />
+
+		<p>{{'newproject.description' | i18next}}</p>
+		<textarea rows="4" cols="50" name="shortDesc" id="project-shortDesc" maxlength="250" placeholder="{{'newproject.descriptionPlaceholder' | i18next}}"></textarea>
+		<br />	
+
+		<!-- TODO: Tags -->
+		<!-- <p>{{'newproject.tags' | i18next}}</p>
+		<input type="text" id="project-tags" placeholder="{{'newproject.tagsPlaceholder' | i18next}}"> 
+		<br /> -->
+
+		<!-- TODO: Type -->
+<!-- 		<p>Projekta tips</p>
+		<select>				
+			<option>Paid per time</option> <!-- Per month, week -->			
+<!--			<option>Paid per work</option>
+			<option>Fundraising for a project</option> <!-- Must hit the minimum OR no minimum-->
+<!--		</select> 
+		<br /> -->
+
+		<p>{{'newproject.category' | i18next}}</p>
+		<select id="project-category"> 
+			<option value="undefined">{{'categories.undefined' | i18next}}</option>
+			<option value="videos">{{'categories.video' | i18next}}</option>
+			<option value="music">{{'categories.music' | i18next}}</option>
+			<option value="literature">{{'categories.literature' | i18next}}</option>
+			<option value="art">{{'categories.art' | i18next}}</option>
+			<option value="photography">{{'categories.photography' | i18next}}</option>			
+			<option value="games">{{'categories.games' | i18next}}</option>
+			<option value="crafts">{{'categories.crafts' | i18next}}</option>
+			<option value="education">{{'categories.education' | i18next}}</option>
+			<option value="charity">{{'categories.charity' | i18next}}</option>
+			<option value="sports">{{'categories.sports' | i18next}}</option>
+			<option value="other">{{'categories.other' | i18next}}</option>
+		</select> 
+		<br />
+
+		<p>{{'newproject.length' | i18next}}</p>
+		<div id="project-expiredate" class="input-append date">
+		    <input data-format="dd/MM/yyyy" id="expire-date" type="text"></input>
+		    <span class="add-on">
+		      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+		    </span>
+		  </div>
+		<br />		
+		
+		<br />
+		<a onclick="window.history.back(); return null;" href="javascript:void(0);">{{'newproject.previousstep' | i18next}}</a> <a style="margin-left: 15px" href="#!/create/step3">{{'newproject.nextstep' | i18next}}</a>
+	</form>
+</section>

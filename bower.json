@@ -1,0 +1,28 @@
+{
+  "name": "fundraiser",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-resource": "^1.4.9",
+    "angular-cookies": "^1.4.9",
+    "angular-mocks": "^1.4.9",
+    "angular-route": "^1.4.9",
+    "angular-sanitize": "^1.4.9",
+    "bootstrap": "^2.3.2",
+    "angular-bootstrap": "^0.7.0",
+    "angular-ui-utils": "^0.0.4",
+    "i18next": "^2.1.0",
+    "ng-i18next": ">=0.5.2",
+    "i18next-xhr-backend": "^0.3.0",
+    "i18next-localstorage-cache": "^0.0.4",
+    "i18next-browser-languagedetector": "^0.0.14",
+    "i18next-sprintf-postprocessor": "^0.0.6",
+    "angular-notify": "^2.5.0",
+    "country-list": "^2.0.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "bootstrap-datetimepicker": "^0.0.11"
+  },
+  "resolutions": {
+    "angular": ">= 1.0.2"
+  }
+}

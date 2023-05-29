@@ -1,0 +1,10 @@
+<section data-ng-controller="DiscoverController">
+	<div id="discover-search">
+		<input id="discover-search-box" type="text" ng-model="fake.model" ng-change="search()" placeholder="{{'discoverPage.searchterms' | i18next}}">
+	</div>
+	<div id="discover-projects">
+	</div>
+	<div id="discover-pagination">
+		<a ng-click="paginate()">{{'discoverPage.nextpage' | i18next}}</a>
+	</div>
+</section>

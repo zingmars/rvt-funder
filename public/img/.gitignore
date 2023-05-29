@@ -1,0 +1,4 @@
+projects/*
+users/*
+!projects/blank_project.png
+!users/blank_avatar.png

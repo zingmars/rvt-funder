@@ -1,0 +1,56 @@
+/* Project creation */
+.newProject {
+	text-align: center;
+}
+.newproject-social-networks {
+	display: inline-block;
+	width: 30%;
+}
+textarea {
+	resize: none;
+}
+.new-project p {
+	margin-top: 10px;
+	font-size: 1.1em;
+}
+.new-project br {
+	line-height: 220%;
+}
+#new-project-nsfw a{
+	text-decoration: none;
+	color: black;
+	cursor: default;	
+}
+.reward ~ .reward {
+	margin-top: 50px;
+}
+#newproject-text {
+	width: 800px;
+}
+.new-project-goal-wrapper, .new-project-reward-wrapper {
+	border: 1px solid grey;
+	border-radius: 10px;
+	width: 275px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.new-project-goal, .new-project-reward {
+	margin-right: 35px;
+}
+.new-project-reward-isDigital {
+	margin-left: -7px !important;
+}
+.new-project-reward-checkboxes input {
+	margin-right: 5px;
+}
+.new-project-reward.noshow,.new-project-goal.noshow {
+	display: none;
+}
+.new-project-reward-isLimited {
+	margin-left: 10px !important;
+}
+
+/* Project view */
+#publish-status {
+	color: red;
+}

@@ -1,0 +1,162 @@
+<section data-ng-controller="ProjectController">
+	<div id="project-view-header">
+		<div class="discover-project">
+<!-- 			<div class="discover-project-img">
+				<img src="/img/projects/nuke.png">
+			</div> -->
+		<div class="discover-project-description">
+			<div class="discover-project-title">
+				<h1 id="project-title"></h1>
+				</div>
+				<div class="discover-project-about">
+					<p id="project-short-description"></p>
+					<p>{{'project.expiredate' | i18next}} <span id="expire-date"></span></p>
+					<p style="display:none;" id="publish-status">{{'project.notPublished' | i18next}}</p>
+				</div>				
+			</div>
+		</div>
+	<div id="project-view-menu">
+		<a>{{'project.information' | i18next}}</a>
+		<a>{{'project.comments' | i18next}}</a>
+		<a>{{'project.news' | i18next}}</a>
+		<a>{{'project.subscribe' | i18next}}</a>
+	</div>
+	<div id="project-view-info">
+		<div id="project-view-info-long">
+<!-- 			<div id="project-view-info-visual">
+				<div id="project-view-info-visual-content">
+					<span id="project-view-info-visual-picture">
+						<img src="/img/projects/nuke.png">
+					</span>
+				</div>
+				<table id="project-view-info-visual-controls">
+					<tr id="project-view-info-visual-controls-picture"> 
+						<td> <img src="/img/projects/nuke.png"> </td>
+						<td> <img src="/img/projects/drone.jpg"> </td>
+					</tr>										
+				</table>
+			</div> -->
+			<!-- <div id="project-view-info-description">
+				<div id="project-view-info-title">
+					<h1> Testa projekts </h1>					
+				</div>
+				<p> Šis ir projekta apraksts. Šeit ievadītais teksts tiks attēlots projekta reklāmas lapā zem augstāk pievienotajiem attēliem un/vai video.</p>
+			</div> -->
+		<!-- Jaunumu saraksts -->
+<!-- 		<div id="project-view-articles">
+			<div class="project-view-article">
+				<div class="project-view-article-title">
+					<h3> Update #001 </h2>
+					<p class="project-view-article-info">(publicēts 01.01.2016)</p>
+				</div>
+				<div class="project-view-article-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus fermentum odio. Proin volutpat lorem at nunc consequat, sit amet vehicula turpis varius. Suspendisse neque arcu, ullamcorper sed egestas sit amet, maximus et lacus. Fusce tristique dui sed orci interdum, in fringilla mauris fringilla. Vivamus imperdiet urna eu turpis faucibus volutpat. Vestibulum gravida at dui a venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean eu viverra metus. Nam luctus rutrum augue, at commodo nisi laoreet non. Aenean quis sem euismod, volutpat arcu eu, consequat nulla. Mauris finibus turpis eget mollis rutrum. Mauris tincidunt metus efficitur mi cursus, non efficitur enim rutrum. In pellentesque, lorem vel imperdiet vulputate, purus leo lacinia nunc, in hendrerit diam urna eu arcu. Aliquam sodales vestibulum nisl ac pulvinar. </p>
+				</div>
+				<div class="project-view-article-footer">
+					<a href="#">Komentāri (0)</a>, <a href="#">Ziņot par pārkāpumu</a>
+				</div>
+			</div>
+			<div class="project-view-article">
+				<div class="project-view-article-title">
+					<h3> Update #002 </h2>
+					<p class="project-view-article-info">(publicēts 02.01.2016)</p>
+				</div>
+				<div class="project-view-article-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus fermentum odio. Proin volutpat lorem at nunc consequat, sit amet vehicula turpis varius. Suspendisse neque arcu, ullamcorper sed egestas sit amet, maximus et lacus. Fusce tristique dui sed orci interdum, in fringilla mauris fringilla. Vivamus imperdiet urna eu turpis faucibus volutpat. Vestibulum gravida at dui a venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean eu viverra metus. Nam luctus rutrum augue, at commodo nisi laoreet non. Aenean quis sem euismod, volutpat arcu eu, consequat nulla. Mauris finibus turpis eget mollis rutrum. Mauris tincidunt metus efficitur mi cursus, non efficitur enim rutrum. In pellentesque, lorem vel imperdiet vulputate, purus leo lacinia nunc, in hendrerit diam urna eu arcu. Aliquam sodales vestibulum nisl ac pulvinar. </p>
+				</div>
+				<div class="project-view-article-footer">
+					<a href="#">Komentāri (0)</a>, <a href="#">Ziņot par pārkāpumu</a>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- Komentāri-->
+		<!-- <div id="project-view-comments"> 
+			<div class="project-view-comment"> 
+				<img class="project-view-comment-avatar" src="/img/blank_avatar.png">
+				<div class="project-view-comment-data">
+					<a href="#" class="project-view-comment-owner">Lietotājs Cilvēks</a> (autors) (01.01.2016 13:00:00)
+					<p class="project-view-comment-contents"> Šis ir testa komentārs </p>
+				</div>
+			</div>
+			<div class="project-view-comment"> 
+				<img class="project-view-comment-avatar" src="/img/blank_avatar.png">
+				<div class="project-view-comment-data">
+					<a href="#">Lietotājs1 Vārds</a> (01.01.2016 12:00:00)
+					<p class="project-view-comment-contents"> Šis ir testa komentārs </p>
+				</div>
+			</div>			
+			<textarea placeholder="Komentārs"></textarea> <br />
+			<button class="btn">Saglabāt</button>
+		</div> -->
+
+		<!-- Apraksts-->
+			<!-- <div id="project-view-info-visual">
+				<div id="project-view-info-visual-content">
+					<span id="project-view-info-visual-picture">
+						<img src="/img/projects/nuke.png">
+					</span>
+				</div>
+				<table id="project-view-info-visual-controls">
+					<tr id="project-view-info-visual-controls-picture"> 
+						<td> <img src="/img/projects/nuke.png"> </td>
+						<td> <img src="/img/projects/drone.jpg"> </td>
+					</tr>										
+				</table>
+			</div> -->
+			<div id="project-view-info-description">
+				<!-- <div id="project-view-info-title">
+					<h1> Pēdējais projekts </h1>					
+				</div> -->
+				<p id="project-view-long-description"></p>
+			</div>
+		</div>
+
+		<div id="project-view-info-state">
+			<p>{{'project.madeby' | i18next}} <a id="owner-profile"><span id="owner-name"></span></a></p>
+			<a href="#!/project/0/pay" id="project-view-info-donate-href">
+				<div id="project-view-info-donatenow">
+					<span id="project-view-info-donate-now-inside">
+						<p id="project-view-info-donate-now-text">{{'project.donate' | i18next}}</p>
+					</span>
+				</div>
+			</a>
+			<div id="project-view-info-donate-state">
+				<p>€<span id="project-view-currentmoney">0</span>/€<span id="project-view-totalmoney">0</span> (<span id="project-view-percentage">0</span>%)</p>
+			</div>
+			<!-- <div id="project-view-info-goals">
+				<h4> Papildmērķi </h4>
+				<div class="project-view-goal reached">
+					<h6 class="project-view-goal-title"> Mērķis 1 </h6>
+					<p> Mērķa apraksts </p>
+					<p class="project-view-goal-value"> Summa: €10 (sasniegts) </p>
+				</div>
+				<div class="project-view-goal">
+					<h6 class="project-view-goal-title"> Mērķis 2 </h6>
+					<p> Mērķa apraksts </p>
+					<p class="project-view-goal-value"> Summa: €150 </p>
+				</div>
+			</div>
+			<div id="project-view-info-rewards">
+				<h4> Atalgojumi </h4>
+				<div class="project-view-reward">
+					<h6 class="project-view-reward-title"> Piemēra atalgojums (€15) </h6>
+					<p> Šis ir piemēra atalgojums </p>
+				</div>
+				<div class="project-view-reward">
+					<h6 class="project-view-reward-title"> Atalgojums 1 (€5) </h6>
+					<p> Liels paldies no mums! </p>					
+				</div>
+				<div class="project-view-reward">
+					<h6 class="project-view-reward-title"> Atalgojums 2 (€15) </h6>
+					<p> Balta bilde. </p>					
+				</div>
+				<div class="project-view-reward">
+					<h6 class="project-view-reward-title"> Atalgojums 3 (€100) </h6>
+					<p> Atgriezīsim naudu </p>
+					<p> (Pieejami 10 no 10) </p>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</section>

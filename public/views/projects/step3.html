@@ -1,0 +1,28 @@
+<section data-ng-controller="NewProjectController" id="step3" class="newProject">
+	<script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
+	<h1>{{'newproject.title' | i18next}}: {{'newproject.step3' | i18next}}</h1>
+	<p>{{'newproject.detalisedproject' | i18next}}</p><br />	
+	<form class="new-project"> 
+		<!-- Video and other materials -->
+		<p>{{'newproject.marketingmaterials' | i18next}}<p>
+		<button>{{'newproject.addVideo' | i18next}}</button>
+		<button>{{'newproject.addPicture' | i18next}}</button>
+		<br />
+
+		<!-- Why should they pledge (long description, HTML) -->	
+		<p>{{'newproject.longdescription' | i18next}}</p>
+		<textarea name="newproject-text" rows="25" placeholder="{{'newproject.longdescriptionPlaceholder' | i18next}}" cols="800" id="newproject-text"></textarea> <!-- TODO: WYSIWYG -->
+		<br />
+
+		<p>({{'newproject.optional' | i18next}}) {{'newproject.successfulDonationMessage' | i18next}}<p>
+		<input type="text" id="successfulMessage" placeholder="{{'newproject.successfulDonationMessagePlaceholder' | i18next}}">
+		<br />
+		
+		<p>({{'newproject.optional' | i18next}}) {{'newproject.successfulDonationVideo' | i18next}}<p>
+		<input type="text" id="successfulVideoURI" placeholder="{{'newproject.successfulDonationVideoPlaceholder' | i18next}}"> <!-- TODO -->
+		<br />
+
+		<br />
+		<a onclick="window.history.back();" href="javascript:void(0);">{{'newproject.previousstep' | i18next}}</a> <a style="margin-left: 15px" href="#!/create/step4">{{'newproject.nextstep' | i18next}}</a>
+	</form>	
+</section>

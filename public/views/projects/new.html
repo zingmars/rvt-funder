@@ -1,0 +1,37 @@
+<section data-ng-controller="ProfileController" class="newProject" id="step1">
+	<h1>{{'newproject.title' | i18next}}: {{'newproject.step1' | i18next}}</h1>
+	<p>{{'newproject.userinfo' | i18next}}</p>
+	<br />
+	<form class="new-project">
+		<p>{{'user.fullname' | i18next}}</p>
+		<input id="username" type="text" name="fullname" placeholder="{{'user.fullname' | i18next}}">
+		<br />
+
+		<p>{{'user.biography' | i18next}}</p>
+		<textarea id="biography" rows="4" maxlength="250" cols="50" name="biography" placeholder="{{'user.biographyPlaceholder' | i18next}}"></textarea>
+		<br />
+
+		<p>{{'user.location' | i18next}}</p>
+			<select id="location">
+				<option value="0"> {{'countries.0' | i18next}} </option>
+				<option value="371"> {{'countries.371' | i18next}} </option>
+				<option value="44"> {{'countries.44' | i18next}} </option>
+				<option value="1"> {{'countries.1' | i18next}} </option>
+			</select>
+			<br />
+		<br />
+
+		<p>{{'user.phone' | i18next}}</p>
+		<input type="text" id="phone" name="phone" placeholder="{{'user.phone' | i18next}}">
+
+		<p>{{'user.socialNetworks' | i18next}} <a ng-click="addNetwork()">(+)</a></p>
+		<div id="socialnetworks"></div>
+
+		<p>{{'user.websites' | i18next}} <a ng-click="addWebsite()">(+)</a></p>
+		<div id="websites"></div>
+		<br />
+		
+		<br />
+		<a href="/#!/create/step2">{{'newproject.nextstep' | i18next}}</a>
+	</form>
+</section>

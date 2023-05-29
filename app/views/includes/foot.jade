@@ -1,0 +1,82 @@
+.footer.navbar
+	.navbar-inner
+		.nav.links
+			h3= t('about')
+			a(href="/#!/aboutus")= t('aboutus')
+			a(href="/#!/statistics")= t('statistics')
+			a(href="/#!/faq")= t('FAQ')
+			a(href="/#!/blog")= t('blog')
+		.nav.links
+			h3= t('legal')
+			a(href="/#!/terms")= t('termsofuse')
+			a(href="/#!/privacy")= t('privacypolicy')			
+		.nav.links
+			h3= t('help')				
+			a(href="/#!/rules")= t('rules')
+			a(href="/#!/tutorials")= t('tutorials')
+			a(href="/support")= t('support')
+			a(href="/#!/contacts")= t('contactus')
+		.nav.links
+			h3= t('social')
+			.link-col
+				a(href="https://www.twitter.com/")= t('twitter')
+				a(href="https://www.facebook.com/")= t('facebook')
+				a(href="https://plus.google.com/")= t('googleplus')
+			.link-col
+				a(href="https://www.youtube.com/")= t('youtube')
+				a(href="https://vk.com/")= t('VK')
+				a(href="https://www.draugiem.lv/")= t('draugiemlv')
+section.scripts
+	//jQuery 
+	script(type='text/javascript', src='/lib/jquery/jquery.min.js')
+
+	//AngularJS
+	script(type='text/javascript', src='/lib/angular/angular.js')
+	script(type='text/javascript', src='/lib/angular-cookies/angular-cookies.js')
+	script(type='text/javascript', src='/lib/angular-resource/angular-resource.js')
+	script(type='text/javascript', src='/lib/angular-route/angular-route.js')
+	script(type='text/javascript', src='/lib/angular-sanitize/angular-sanitize.min.js')
+	script(type='text/javascript', src='/lib/angular-notify/angular-notify.min.js')
+
+	//Bootstrap
+	script(type='text/javascript', src='/lib/angular-bootstrap/ui-bootstrap.js')
+	script(type='text/javascript', src='/lib/angular-bootstrap/ui-bootstrap-tpls.js')
+	script(type='text/javascript', src='/lib/angular-ui-utils/modules/route/route.js')
+	script(type='text/javascript', src='/lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')
+	script(type='text/javascript', src='/lib/bootstrap/js/bootstrap-collapse.js')
+	script(type='text/javascript', src='/lib/bootstrap/js/bootstrap-transition.js')
+
+	//Localisation support
+	script(type='text/javascript', src='/lib/i18next-xhr-backend/i18nextXHRBackend.min.js')
+	script(type='text/javascript', src='/lib/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js')
+	script(type='text/javascript', src='/lib/i18next-localstorage-cache/i18nextLocalStorageCache.min.js')
+	script(type='text/javascript', src='/lib/i18next-sprintf-postprocessor/i18nextSprintfPostProcessor.min.js')
+	script(type='text/javascript', src='/lib/i18next/i18next.min.js')
+	script(type='text/javascript', src='/lib/ng-i18next/dist/ng-i18next.js')
+
+	//Application Init
+	script(type='text/javascript', src='/js/app.js')
+	script(type='text/javascript', src='/js/config.js')
+	script(type='text/javascript', src='/js/directives.js')
+	script(type='text/javascript', src='/js/filters.js')
+
+	//Application Services
+	script(type='text/javascript', src='/js/services/global.js')
+
+	//Application Controllers
+	script(type='text/javascript', src='/js/controllers/discover.js')
+	script(type='text/javascript', src='/js/controllers/aboutus.js')
+	script(type='text/javascript', src='/js/controllers/users.js')
+	script(type='text/javascript', src='/js/controllers/index.js')
+	script(type='text/javascript', src='/js/controllers/profile.js')
+	script(type='text/javascript', src='/js/controllers/project.js')
+	script(type='text/javascript', src='/js/controllers/profileview.js')
+	script(type='text/javascript', src='/js/controllers/header.js')
+	script(type='text/javascript', src='/js/controllers/newproject.js')
+	script(type='text/javascript', src='/js/controllers/payment.js')
+	script(type='text/javascript', src='/js/init.js')
+
+	if (process.env.NODE_ENV == 'development')
+		//Livereload script rendered 
+		script(type='text/javascript', src='http://localhost:35729/livereload.js')
+

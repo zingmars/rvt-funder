@@ -1,0 +1,23 @@
+<section data-ng-controller="UserController">
+	<div class="auth">		
+		<div id="deleteMessage">{{'user.deleteWarning' | i18next}}</div>		
+		<form class="signup form-horizontal" method="POST" name="deleteaccount" ng-submit="deleteAccount(formData)">
+			<div class="error" id="wrongcredentials">{{'user.wrongcredentials'}}</div>
+			<div class="control-group">
+				<label class="control-label">{{'user.email' | i18next}}</label>
+				<span class="controls">
+					<input type="email" name="email" id="email" ng-model="formData.email" placeholder="{{'user.email' | i18next}}" required>
+				</span>
+			</div>
+			<div class="control-group">
+			<label class="control-label">{{'user.password' | i18next}}</label>
+				<span class="controls">
+					<input type="password" name="password" id="password" ng-model="formData.password" placeholder="{{'user.password' | i18next}}" required>
+				</span>
+			</div>			
+			<div class="form-actions">
+				<button class="btn btn-primary" ng-disabled="!deleteaccount.$valid" type="submit">{{'user.deleteAccount' | i18next}}</button>
+			</div>
+		</form>
+	</div>
+</section>

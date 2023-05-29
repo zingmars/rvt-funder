@@ -1,0 +1,42 @@
+<section data-ng-controller="UserController">
+	<h1 class="headline">{{'settings' | i18next}}</h1>
+	<form class="form-centered">
+		<h4>{{'user.email' | i18next}}</h4>
+		<p>{{'user.emailCannotChange' | i18next}}</p>
+		<br />		
+
+		<!-- <h4>Connected oAuth accounts</h4>
+		<div>
+		<a href="javascript:void(0);">Connect to Google</a>
+		<a href="javascript:void(0);">Connect to Twitter</a>
+		<a href="javascript:void(0);">Connect to Facebook</a>
+		</div>
+		<div>
+		<a href="javascript:void(0);">Connect to VK</a>
+		<a href="javascript:void(0);">Connect to Draugiem.lv</a>
+		</div>
+		<br /> -->
+
+ 		<h4>{{'user.2FASettings' | i18next}}</h4>
+		<p>{{'user.2FADisabled' | i18next}}</p>
+		<!-- <p>{{'user.2FAEnabled' | i18next}}</p> -->
+		<!-- <a>{{'user.2FAEnable' | i18next}}</a> -->
+		<!-- <a>{{'user.2FADisable' | i18next}}</a> -->
+		<br />
+		<br />
+		
+		<h4>{{'user.emailSettings' | i18next}}</h4>
+		<ul class="settings-newsletter" style="list-style: none;">			
+			<li><input type="checkbox"> {{'funderNewsletters' | i18next}}</li>
+			<li><input type="checkbox"> {{'announcements' | i18next}}</li>
+			<li><input type="checkbox"> {{'fundraiserUpdates' | i18next}}</li>
+			<li><input type="checkbox"> {{'messages' | i18next}}</li>			
+		</ul>
+		<br />
+
+		<br />
+		<h4>{{'user.accountActions' | i18next}}</h4>
+		<h5><a href="/#!/resetpassword">{{'user.changePassword' | i18next}}</a></h5>
+		<h5><a href="/#!/deleteaccount">{{'user.deleteAccount' | i18next}}</a></h5>
+	</form>		
+</section>

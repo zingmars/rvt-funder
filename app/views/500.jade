@@ -1,0 +1,10 @@
+extends layouts/default
+
+block content
+	h1= t('500error')
+	script(type='text/javascript').
+		window.setTimeout(function(){ window.location.href="/"; },3000);
+//-  #error-message-box
+//-    #error-stack-trace
+//-      pre
+//-        code!= error

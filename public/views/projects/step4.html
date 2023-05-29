@@ -1,0 +1,39 @@
+<section data-ng-controller="NewProjectController" id="step4" class="newProject">
+	<h1>{{'newproject.title' | i18next}}: {{'newproject.step4' | i18next}}</h1>
+	<p>{{'newproject.moneyinfo' | i18next}}</p><br />	
+	<form class="new-project"> 	
+		<!-- only visible if Fundraising is selected -->
+		<p>{{'newproject.moneyamount' | i18next}}</p>
+		<input type="number" min="0.01" step="0.01" id="goal" placeholder="€">
+		<br />
+
+		<!-- <p>Is your project still possible if you receive less than you need?</p>
+		<select> 
+			<option>Yes (flexible funding)</option>
+			<option>No (fixed funding)</option>
+		</select> 
+		<br />	 -->			
+		
+		<!-- only visible if paid per time is selected -->
+		<!-- <span class="new-project-paidpertime-interval">
+			<p>In what intervals do you want your followers to pay you?</p>
+			Every <input type="number"> days. (min - 7, max - 90)
+		</span>
+		<br /> -->		
+
+		<p>{{'newproject.goals' | i18next}} <a id="addGoal">(+)</a></p>
+ 		<div id="new-project-goals"></div>
+		<br />
+
+		<p>{{'newproject.rewards' | i18next}} <a id="addReward">(+)</a></p>				
+		<div id="new-project-rewards"></div>
+		<br>
+		<br />
+		
+		<!--<span class="new-project-paidperwork-message">Please note: the first reward tier also serves as the minimum amount of money needs to subscribe to your work.</span> -->
+		<br />		
+		<p> {{'newproject.disclaimer' | i18next}}.</p>
+		<br />
+		<a onclick="window.history.back();" href="javascript:void(0);">{{'newproject.previousstep' | i18next}}</a><a style="margin-left: 15px" id="finalise-project">{{'newproject.preview' | i18next}}</a>
+	</form>	
+</section>

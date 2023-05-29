@@ -1,0 +1,133 @@
+TODO:
+??? 2FA
+??? E-pasti
+??? Projektu sarakstam vajag parādīt cik daudz projekts jau ir savācis.
+??? Kategorijas
+??? InAppReward link (Id) (kā tieši sistēma zin kuri inapprewards pieder noteiktam projektam)
+??? Logins, paroles resets, reģistrācijas ziņām vajadzētu būt neitrālākām lai nelīkotu kontu eksistenci.
+
+Ja ir laiks:
+[] Mājaslapas pievienošanas bugs (nevar pielikt pilna garuma URL)
+[] Ziedošanas piemērs
+[] Bilžu augšuplāde
+[] Mērķi un Atalgojumi projekta izveides laikā
+[] Administrācijas panelis
+[] Uztaisi dropdown ikonām dropup ikonas variantu.
+[] Projekta stāvokļa (naudas ziņā aprēķināšana)
+[] Projektu dzēšana
+
+Ja tiešām ir laiks:
+[] Projektu iestatījumi
+[] Notifikācijas visās lapās
+[] Dažādas krāsas notifikācijas atkarībā no satura
+[] Default vērtības datubāzes elementiem (piem fundraiser.)
+[] Datubāzes ievades/izvades datu ievades pareizīguma pārbaude
+[] Exceptions visos kontrolieros
+[] Pieliec normālus success un failure promise visiem http pieprasījumiem.
+[] Birkas
+[] UTC laiki visur
+[] Time & date picker valodas implementācija
+
+
+Roadmap:  
+Top nav bar:
+[x] Front page (Informācija par servisu; linki uz reģistrēšanos vai log in; pāris populārākās lapas)				
+[x] Discover (Atļauj izvēlēties filtrus - kategorijas, un pēc kā viņus sakārtot - popularitātes, datumiem utml.)
+[x] How it Works (Īss apraksts par to, kā strādā serviss)
+[x] Login
+
+Bottom nav bar:
+[x] About (Par kompāniju un skriptu)
+[x] Blog (Links uz lapas blogu)
+[x] FAQ (Lapa kurā ir dažādi jautājumi par servisu utml, kā arī links uz ārēju Help desk servisu (Hesk, osTicket whatever))
+[x] Legal (Terms of Service, Community guidelines)
+[x] Links to social pages
+
+Admin:    
+[] Front page (Lapa, kas parāda sistēmas statusu)
+[] User management (Lietotāju saraksts, izveidošana, paroļu/2FA resets, oAuth dati)
+[] Fundraiser management (fr saraksts, izveidošana, modificēšana, pieņemšana, aizvēršana)
+[] Settings (Iestatījumu modificēšana)
+
+User:
+[x] Fundraiser creation
+[x] Fundraiser edit
+[] Become a helper
+[] Payment
+[] Rewards screen
+[] Messages
+[x] Profile
+[] Settings
+[] Pledges/Backed screen
+[] Last activity
+[x] Log out
+[x] Delete account
+[x] Change Password
+[] Email subscriptions
+[] Login History
+[] 2FA Settings
+[] oAuth  	
+[] Revoke sessions
+  
+User Profile:
+[x] Name
+[] Image
+[x] Email
+[x] Description
+[x] Websites
+[x] Social network sites sites    
+[x] Location (Time Zone)
+
+Fundraiser creation:
+[x] User info milk page (Get Name, Approx address, Social network sites, Websites)
+[x] Fundraiser info (Name, NSFW?, type (Timed - monthly, every x weeks or days; per subscriber release; fixed; flexible), Category, Image)
+[] Video setup
+[x] Short and long description
+[] Goals & Rewards
+[] Verification
+[x] Preview
+[] Withdrawal data
+[x] Submit
+[] Recall submition
+[] Delete
+
+Fundraiser owner:
+[] Write a post (draft)
+[] Edit Rewards (also limits)    
+[] Edit/Write Info
+[] Edit/Add Videos
+[] Edit/Add/Remove [!] rewards
+[] Delete Fundraiser    
+[] Privacy (Hide pledges or their sizes, comments)
+ 
+Fundraiser page:
+[] Become funder
+[] Milestones
+[] Rewards
+[] About owner
+[] Fundriser video
+[] About fundraiser
+[] Posts
+[] User comments
+[] Share button
+[] Follow (Send emails when updates come)
+[] List of funders (User can be anonymous)
+ 
+Payment:
+[] Reward selection
+[] Pledge review
+[] Payment selector
+[] Payment confirmation and fundraiser owner's "Thank you screen"
+
+Registration:
+[x] Data entry
+[x] Data checking
+
+Login:
+[x] Data entry
+[x] Data checking
+[] 2FA
+[] oAuth
+
+Discover:
+[x] Search
